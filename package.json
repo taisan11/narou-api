@@ -10,7 +10,6 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
-    "happy-dom-without-node": "^13.4.1",
     "ky": "^1.2.3",
     "pako": "^2.1.0",
     "ufo": "^1.5.3"

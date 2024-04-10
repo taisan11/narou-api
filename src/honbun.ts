@@ -1,8 +1,7 @@
-import { Window } from 'happy-dom-without-node';
+import ky from 'ky'
 
-const window = new Window({ url: 'https://ncode.syosetu.com/n4234iq/' });
-const document = window.document;
-
-const container = document.querySelector('#novel_ex').textContent;
-
-console.log(container);
+async function main() {
+    const response = await ky.get('https://ncode.syosetu.com/txtdownload/dlstart/ncode/1141671/?no=1&hankaku=0&code=utf-8&kaigyo=crlf')
+    console.log(await response.text())
+}
+main()
